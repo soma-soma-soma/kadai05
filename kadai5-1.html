@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>演習課題5-1：カウンタ</title>
+</head>
+<body>
+  <div id="msg">0</div>
+  <button id="Button">カウンタ</button>
+  <button id="Button2">リセット</button>
+  <script>
+  const a =document.getElementById("msg") 
+  const b =document.getElementById("Button")
+  const s =document.getElementById("Button2")
+  let count = 0;
+  
+  function buttonClick(){
+    count++;
+    a.innerHTML = count;
+  }
+  b.onclick = buttonClick;
+  
+  function buttonClick2(){
+  count=0;
+  a.innerHTML = count;
+  }
+  s.onclick = buttonClick2;
+  </script>
+</body>
+</html>
